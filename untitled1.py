@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 
 # Parámetros de la señal portadora
 fc = 10  # Frecuencia de la portadora (Hz)
-Ac = 1   # Amplitud de la portadora
+Ac = 1   # Amplitud de la señal portadora
 
 # Parámetros de la señal moduladora
 fm = 1   # Frecuencia de la moduladora (Hz)
@@ -34,7 +34,7 @@ modulated_signal = Ac * (1 + modulator) * np.cos(2 * np.pi * fc * t)
 
 
 # Graficar las señales
-plt.figure(figsize=(12, 8))
+plt.figure(figsize=(15, 8))
 
 plt.subplot(3, 1, 1)
 plt.plot(t, carrier)
